@@ -1,0 +1,135 @@
+:root{
+    --bg-color: #fdf8f3;
+    --text: #2c3e50;
+    --color: #d8a7b1;
+}
+body{
+ background-color: var(--bg-color);
+ color: var(--text);
+ text-align: center;
+ padding-bottom: 100px;
+ 
+}
+#start{
+    background-color: var(--color);
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 60px;
+}
+#taskdiv{
+    display: none;
+}
+#firsttext{
+    margin: 80px;
+}
+#container1{
+    background-color: var(--color);
+    border-radius:20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0; 
+    padding: 0 20px; 
+    height: 80px;
+    z-index: 1000; 
+    margin-bottom: 100px;
+}            
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+}
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 100%;
+    max-width: 350px;
+    margin: 5px 0;
+    padding:5px;
+}
+nav ul {
+list-style: none;
+}
+#name{
+    padding: 15px;
+    
+}
+nav ul li {
+display: inline;
+margin-right: 15px;
+}
+nav a {
+color: var(--text);
+text-decoration: none;
+font-weight: bold;
+}
+nav a:hover {
+color: #2980b9;
+}
+/* TP3 Other */
+ul {
+list-style: none;
+padding: 20px;
+}
+#taskTitle{
+    padding: 10px;
+    width: 200px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    margin: 20px;
+}
+#end{
+    background-color: var(--color);
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 30px;
+}
+.delete-btn {
+    background-color: var(--color);
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+#taskDate{
+    padding: 5px;
+    width: 100px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    margin: 10px;
+    accent-color: var(--color);
+}
+#taskDate:focus{
+    outline: none;
+    border-color: var(--color);
+}
+
+#taskPriority{
+    padding: 5px;
+    width: 120px;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    margin: 10px;
+}
+#taskPriority:focus{
+    outline: none;
+    border-color: var(--color);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do List App</title>
+
+<!-- TP3 Exercise 1:
+External CSS -->
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Exercise 1: Navigation Bar -->
+    <header>
+        <nav>
+            <div id="container1">
+                <div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tasks.html">My Tasks</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div id="name">
+                <h3>Hamza Asma</h3>
+            </div>
+            </div>
+            
+            
+            
+        </nav>
+    </header>
+    <main>
+        <section>
+    
+            <h1 id="firsttext">Organize your tasks efficiently</h1>
+            <p id="greetingMessage"></p>
+            <p>This simple To-Do List application helps you manage your daily tasks and projects.</p>
+            <button id="start">Start Now</button>
+        </section>
+
+        <div id="taskdiv">
+                <section>
+                    <h2>My Tasks</h2>
+                    <ul class="task-list" id="taskList">
+                        <li class="task">
+                        <input type="checkbox"> Finish HTML lab – Due: May 10
+                        </li>
+                        <li class="task">
+                        <input type="checkbox"> Prepare presentation – Due: May 12
+                        </li>
+                        <li class="task">
+                        <input type="checkbox"> Study PHP – Due: May 15
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Add New Task</h2>
+                    <form id="taskForm">
+                        <div>
+                            <label>Task Title:</label>
+                            <input type="text" id="taskTitle" required>
+                        </div>
+                        <div>
+                            <label>Due Date:</label>
+                            <input type="date" id="taskDate">
+                        </div>
+                        <div>
+                            <label>Priority:</label>
+                            <select id="taskPriority">
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+                        <button id="end" type="submit">Add Task</button>
+                    </form>
+                </section>
+            </div>
+  
+
+    </main>
+
+    <footer>
+        <p>2026 – Web Development Course</p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="about.html">About</a>
+        </nav>
+    </footer>
+        <script src="exo2.js"></script>
+</body>
+</html>
